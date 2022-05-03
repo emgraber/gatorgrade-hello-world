@@ -11,6 +11,12 @@ setup: |
         fragment: TODO
         count: 0
         exact: true
+    - description: Use a function
+      check: MatchFileRegex
+      options:
+        regex: "def .*?:"
+        count: 1
+        exact: False
   - writing/reflection.md:
     - description: Complete all TODOs
       check: MatchFileFragment
