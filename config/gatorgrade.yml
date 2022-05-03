@@ -1,0 +1,32 @@
+setup: |
+  ./script.sh
+  poetry install
+  echo "Setup Complete!"
+---
+- path/to:
+  - hello_world.py:
+    - description: Complete all TODOs
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+  - writing/reflection.md:
+    - description: Complete all TODOs
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Write at least 25 words in writing/reflection.md
+      check: CountFileWords
+      options:
+        count: 25
+- description: Pass MDL
+  command: mdl .
+- description: Pass HTMLHint
+  command: htmlhint
+- description: Have a total of 5 commits, 2 of which were created by you
+  check: CountCommits
+  options:
+    count: 5
