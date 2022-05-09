@@ -1,4 +1,4 @@
-# Sample reflection of Sample Repository 
+# Sample Reflection of Sample Repository 
 
 ## Explain the significance of "hello world" in the context of learning to code in Python
 
