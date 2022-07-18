@@ -1,6 +1,6 @@
 setup: |
   poetry install
-  echo "Setup Complete!"
+  echo "Setup complete!"
 ---
 - hello_world.py:
     - description: Complete all TODOs
