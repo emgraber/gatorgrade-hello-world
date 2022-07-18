@@ -13,12 +13,12 @@ setup: |
       check: MatchFileFragment
       options:
         fragment: "say_hello("
-        count: 1
+        count: 2
     - description: Call the say_hello_color function
       check: MatchFileFragment
       options:
         fragment: "say_hello_color("
-        count: 1
+        count: 2
 - writing/reflection.md:
     - description: Complete all TODOs
       check: MatchFileFragment
