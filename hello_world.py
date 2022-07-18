@@ -11,6 +11,7 @@ def say_hello_color(name, color):
     """Print a greeting in color."""
     rich.print(f"[{color}]Hello, {name}!")
 
+# TODO: Call say_hello
 
-say_hello("gator")
-say_hello_color("gator", "blue")
+# TODO: Call say_hello_color
+
