@@ -30,8 +30,8 @@ setup: |
       check: CountFileWords
       options:
         count: 25
-- description: Pass MDL
-  command: mdl .
+- description: Pass pylint
+  command: poetry run pylint *.py
 - description: Have a total of 5 commits, 2 of which were created by you
   check: CountCommits
   options:
