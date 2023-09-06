@@ -53,7 +53,7 @@ jobs:
           if: always()
           run: |
             poetry install
-            poetry run hello_world.py
+            poetry run python hello_world.py
         # Run GatorGrader: see config/gatorgrade.yml
         - name: Run GatorGrader with GatorGrade
           if: always()
